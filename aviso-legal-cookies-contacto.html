@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviso legal y cookies | Aeternum Vital</title>
+  <meta name="description" content="Aviso legal y política de cookies detallada de Aeternum Vital. Gestiona tu consentimiento de cookies." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="Aviso legal y cookies — Aeternum Vital" />
+  <meta property="og:image" content="https://grupoaeternum.com.br/assets/img/hero-bienestar.jpg" />
+  <meta property="og:url" content="https://grupoaeternum.com.br/aviso-legal-cookies-contacto.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div data-component="header" data-active="aviso-legal-cookies-contacto"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container legal">
+        <h1>Aviso legal y cookies</h1>
+        <p class="updated">Última actualización: 6 de junio de 2026</p>
+
+        <div class="toc">
+          <strong>Contenido</strong>
+          <ul class="mb-0">
+            <li><a href="#aviso">1. Aviso legal</a></li>
+            <li><a href="#cookies">2. Política de cookies</a></li>
+          </ul>
+        </div>
+
+        <h2 id="aviso">1. Aviso legal</h2>
+        <p>En cumplimiento de la normativa aplicable, se informa de los datos del titular del Sitio:</p>
+        <ul>
+          <li><strong>Titular:</strong> AM AETERNUM LTDA</li>
+          <li><strong>Sitio web:</strong> https://grupoaeternum.com.br</li>
+        </ul>
+        <p>
+          El acceso y uso del Sitio implica la aceptación de las condiciones recogidas en nuestros
+          <a href="terminos-y-condiciones.html">términos y condiciones</a> y en nuestra
+          <a href="politica-de-privacidad.html">política de privacidad</a>. Las compras se gestionan a
+          través de la plataforma Digistore24, donde también puedes tramitar solicitudes relacionadas con
+          tu pedido (incluidos reembolsos).
+        </p>
+
+        <h2 id="cookies">2. Política de cookies</h2>
+        <p>
+          Una cookie es un pequeño archivo que se almacena en tu dispositivo al visitar el Sitio. Usamos
+          cookies para que el Sitio funcione, recordar tus preferencias y, con tu consentimiento, medir
+          nuestras campañas publicitarias.
+        </p>
+
+        <h3>2.1. Tipos de cookies que utilizamos</h3>
+        <ul>
+          <li><strong>Cookies esenciales:</strong> necesarias para el funcionamiento del Sitio y para recordar tu elección sobre cookies. No requieren consentimiento.</li>
+          <li><strong>Cookies de analítica:</strong> nos ayudan a entender cómo se usa el Sitio. Se activan solo con tu consentimiento.</li>
+          <li><strong>Cookies de marketing (TikTok Pixel):</strong> permiten medir y optimizar campañas de TikTok Ads. El identificador es {{TIKTOK_PIXEL_ID}}. Se activan solo con tu consentimiento.</li>
+        </ul>
+
+        <h3>2.2. Gestión del consentimiento</h3>
+        <p>
+          Al entrar por primera vez verás un banner para <strong>aceptar o rechazar</strong> las cookies
+          no esenciales. Las cookies de analítica y marketing solo se cargan si las aceptas. Puedes
+          cambiar tu elección en cualquier momento desde el botón siguiente:
+        </p>
+        <p>
+          <button class="btn btn-outline" type="button" id="resetCookies">Cambiar mis preferencias de cookies</button>
+        </p>
+
+        <h3>2.3. Cómo desactivar cookies en tu navegador</h3>
+        <p>
+          Además de nuestro banner, puedes configurar o eliminar las cookies desde los ajustes de tu
+          navegador. Ten en cuenta que desactivar ciertas cookies puede afectar al funcionamiento del Sitio.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Permite reabrir el banner de cookies borrando la preferencia guardada.
+    (function () {
+      var btn = document.getElementById("resetCookies");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        try { localStorage.removeItem("av_cookie_consent"); } catch (e) {}
+        location.reload();
+      });
+    })();
+  </script>
+</body>
+</html>
